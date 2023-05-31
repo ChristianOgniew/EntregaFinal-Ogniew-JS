@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- css guia -->
+    <style>
+      /* tamaño img */
+      .lista-productos img {
+        max-width: 100px;
+        height: auto;
+        margin-right: 10px;
+      }
+      /* firulete para las img */
+
+      /* firulete para el form */
+      .container-form {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .form-control {
+        margin-bottom: 10px;
+      }
+
+      .btn-secondary {
+        background-color: #555555;
+        border-color: #555555;
+      }
+
+      .btn-secondary:hover {
+        background-color: #333333;
+        border-color: #333333;
+      }
+    </style>
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/c97a1daf21.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--SWEET ALERT  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css"
+    />
+    <!-- FAV ICON -->
+    <link
+      rel="shortcut icon"
+      href="./img/LogosHygge/faviconhygge.png"
+      type="image/x-icon"
+    />
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="bootstrap.css" />
+
+    <title>Hygge Clothes</title>
+  </head>
+  <body>
+    <!-- EMPIEZA NAV BAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid text-center justify-content-center">
+        <img
+          class="d-inline-block logo__img img-fluid m-2"
+          src="./img/LogosHygge/logohyggenegro.png"
+          width="50"
+          alt="Logo de la marca Hygge"
+        />
+        <a class="navbar-brand" href="#">HYGGE CLOTHES</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarColor03"
+          aria-controls="navbarColor03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="lista-vacia"></div>
+
+    <!-- CARDS -->
+
+    <div id="contenedor-productos" class="container-fluid m-0 p-0 row"></div>
+
+    <!-- CARRITO PRODUCTOS -->
+
+    <div id="carrito" class="container">
+      <h2>Tu Carrito</h2>
+      <span id="contador-carrito"></span>
+      <em>Productos seleccionados...</em>
+      <div class="lista-productos"></div>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+        <p id="total-compra">Total: $0</p>
+        <button class="vaciar-producto btn btn-dark m-3" type="button">
+          Vaciar carrito
+        </button>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- FORM -->
+
+    <form class="container">
+      <h3>Formulario de Contacto</h3>
+      <div class="form-group">
+        <label for="inputName">Nombre y Apellido</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputName"
+          placeholder="Ingrese su Nombre y Apellido"
+        />
+      </div>
+      <div class="form-group">
+        <label for="inputEmail">Correo Electrónico</label>
+        <input
+          type="email"
+          class="form-control"
+          id="inputEmail"
+          placeholder="Ingrese su E-mail"
+        />
+      </div>
+      <div class="container-form">
+        <button type="submit" class="btn btn-secondary">
+          Comprar y Enviar Información
+        </button>
+      </div>
+    </form>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

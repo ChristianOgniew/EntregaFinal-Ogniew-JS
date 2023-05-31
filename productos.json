@@ -1,0 +1,20 @@
+[
+  {
+    "nombre": "Remera Moncler",
+    "imagen": "./img/Remeras/MonclerRemera.png",
+    "precio": 8999,
+    "cuotas": 2999
+  },
+  {
+    "nombre": "Remera Burberry",
+    "imagen": "./img/Remeras/BurberryRemera.png",
+    "precio": 8999,
+    "cuotas": 2999
+  },
+  {
+    "nombre": "Remera Essentials",
+    "imagen": "./img/Remeras/EssentialRemera.png",
+    "precio": 8999,
+    "cuotas": 2999
+  }
+]
